@@ -1,0 +1,114 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Root Variables for Consistent Styling */
+:root {
+  --primary-color: #4a90e2;
+  --primary-hover-color: #357abd;
+  --cancel-color: #e74c3c;
+  --cancel-hover-color: #c0392b;
+  --input-border-color: #ccc;
+  --input-focus-border-color: var(--primary-color);
+  --input-error-border-color: #e74c3c;
+  --input-error-background: #fceae8;
+  --font-family: 'Roboto', sans-serif;
+  --error-color: #e74c3c;
+}
+
+/* Universal Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Global Body Styling */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Form Styling */
+.form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Control Styling */
+.control {
+  margin-bottom: 1rem;
+}
+
+/* Label Styling */
+.control label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Input Styling */
+.control input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font: inherit;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Input Focus Styling */
+.control input:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+/* Invalid Input Styling */
+.invalid input {
+  border-color: var(--input-error-border-color);
+  background-color: var(--input-error-background);
+}
+
+/* Button Styling */
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+/* Button Hover Styling */
+button:hover,
+button:active {
+  background-color: var(--primary-hover-color);
+}
+
+/* Cancel Button Styling */
+button[type="button"] {
+  background-color: var(--cancel-color);
+  margin-top: 0.5rem; /* Add margin to separate the buttons */
+}
+
+button[type="button"]:hover,
+button[type="button"]:active {
+  background-color: var(--cancel-hover-color);
+}
+
+/* Error Text Styling */
+.error-text {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

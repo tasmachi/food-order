@@ -1,0 +1,45 @@
+/* MealItemForm.module.css */
+
+.form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .form input {
+    width: 3rem;
+    font: inherit;
+    padding: 0.25rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  
+  .form input:focus {
+    outline: none;
+    border-color: #8a2b06;
+  }
+  
+  .form button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #8a2b06;
+    border: 1px solid #8a2b06;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover,
+  .form button:active {
+    background-color: #5a1a01;
+    border-color: #5a1a01;
+  }
+  .invalid {
+    color:red
+  }
+  

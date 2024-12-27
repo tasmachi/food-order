@@ -1,0 +1,34 @@
+/* Input.module.css */
+
+.input {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+  }
+  
+  .input input {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 80%;
+    max-width: 20rem;
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: #ff6f47;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px #ff6f47;
+  }
+  
+  .input input::placeholder {
+    color: #aaa;
+  }
+  

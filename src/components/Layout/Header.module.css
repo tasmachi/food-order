@@ -1,0 +1,63 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #7E2424; /* Using hex color for consistency */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.header:hover {
+    background-color: #6D1F1F; /* Slightly darker on hover for effect */
+}
+
+.main-image {
+    width: 100%;
+    height: 25rem;
+    z-index: 0;
+    overflow: hidden;
+    margin-top: 5rem; /* Ensures content below the header is visible */
+    position: relative; /* For better control over child positioning */
+}
+
+.main-image img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-5deg) translate(-4rem, -1rem);
+    transition: transform 0.5s ease-in-out; /* Smooth transition on hover */
+}
+
+/* .main-image img:hover {
+    transform: rotate(0deg) translate(0, 0); /* Straighten and center image on hover */
+/* */
+
+.header-logo {
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    font-weight: bold; /* Bold for emphasis */
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1rem; /* Spacing between nav items */
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.header-nav a:hover {
+    color: #FFC107; /* Golden color on hover for visibility */
+}

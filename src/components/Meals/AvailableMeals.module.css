@@ -1,0 +1,74 @@
+/* AvailableMeals.module.css */
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #944c4c;
+  margin-top: 2rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meals li {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meals li:hover {
+  background-color: #e2e2e2;
+}
+
+.meals li h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.meals li .description {
+  font-style: italic;
+  color: #888;
+}
+
+.meals li .price {
+  font-size: 1.25rem;
+  color: #ad5502;
+  font-weight: bold;
+}
